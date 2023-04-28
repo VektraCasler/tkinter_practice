@@ -1,6 +1,13 @@
 # abq_data_entry/constants.py
+''' Docstring '''
+
+# IMPORTS ------------------------------------------------
 
 from enum import Enum, auto
+
+# VARIABLES ----------------------------------------------
+
+# CLASSES ------------------------------------------------
 
 class FieldTypes(Enum):
     string = auto()
@@ -11,4 +18,15 @@ class FieldTypes(Enum):
     decimal = auto()
     integer = auto()
     boolean = auto()
+
+# MAIN LOOP ----------------------------------------------
+
+def main():
+
+    pass
+
+    return
+
+if __name__ == '__main__':
+    main()
 

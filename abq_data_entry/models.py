@@ -1,4 +1,7 @@
 # abq_data_entry/models.py
+''' Docstring '''
+
+# IMPORTS ------------------------------------------------
 
 import csv
 from pathlib import Path
@@ -6,6 +9,10 @@ from datetime import datetime
 import os
 
 from .constants import FieldTypes as FT
+
+# VARIABLES ----------------------------------------------
+
+# CLASSES ------------------------------------------------
 
 class CSVModel:
     ''' CSV file storage '''
@@ -27,7 +34,7 @@ class CSVModel:
         "Min Height": {'req': True, 'type': FT.decimal,'min': 0, 'max': 1000, 'inc': .01},
         "Max Height": {'req': True, 'type': FT.decimal,'min': 0, 'max': 1000, 'inc': .01},
         "Med Height": {'req': True, 'type': FT.decimal,'min': 0, 'max': 1000, 'inc': .01},
-        "Notes": {'req': False, 'type': FT.long_string}
+        "Notes": {'req': False, 'type': FT.string}
     }
 
     def __init__(self):
@@ -56,3 +63,16 @@ class CSVModel:
             if new_file_check:
                 csvwriter.writeheader()
             csvwriter.writerow(data)
+
+
+# MAIN LOOP ----------------------------------------------
+
+def main():
+
+    pass
+
+    return
+
+if __name__ == '__main__':
+    main()
+
