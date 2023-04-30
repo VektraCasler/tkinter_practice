@@ -23,6 +23,17 @@ class MainMenu(tk.Menu):
         super().__init__(parent, **kwargs)
         self.settings = settings
         
+        # Go Menu ----------------------------------
+        go_menu = tk.Menu(self, tearoff=False)
+        go_menu.add_command(
+            label = "Record List",
+            command=self._event('<<ShowRecordList>>')
+        )
+        go_menu.add_command(
+            label='New Record',
+            command = self._event('<<NewRecord>>')
+        )
+        
         # File Menu --------------------------------
         file_menu = tk.Menu(self, tearoff=False)
         file_menu.add_command(
@@ -56,6 +67,7 @@ class MainMenu(tk.Menu):
         
         # Add menus in the right order...
         self.add_cascade(label='File', menu=file_menu)
+        self.add_cascade(label='Go', menu=go_menu)
         self.add_cascade(label='Options', menu=options_menu)
         self.add_cascade(label='Help', menu=help_menu)
 

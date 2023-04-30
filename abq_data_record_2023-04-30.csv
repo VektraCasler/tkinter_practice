@@ -1,0 +1,4 @@
+Date,Time,Technician,Lab,Plot,Seed Sample,Humidity,Light,Temperature,Equipment Fault,Plants,Blossoms,Fruit,Min Height,Max Height,Med Height,Notes
+2023-04-30,16:00,Vektra,B,4,fqwv,4.0,2.0,6.0,False,2,2,2,3.0,3.0,3.0,testing
+2023-04-29,8:00,Vektra,C,10,2asd,4.0,5.0,7.0,False,4,4,6,3.0,3.0,7.0,aqberd
+2023-04-30,20:00,Vektra,A,2,egr2,3.0,1.0,4.0,False,0,0,0,0.0,0.0,0.0,q	vev
