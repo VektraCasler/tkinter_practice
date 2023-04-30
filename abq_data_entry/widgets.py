@@ -166,7 +166,6 @@ class ValidatedCombobox(ValidatedMixin, ttk.Combobox):
             self.error.set('A value is required')
         return valid
 
-
 class ValidatedSpinbox(ValidatedMixin, ttk.Spinbox):
     """A Spinbox that only accepts Numbers"""
 
@@ -333,7 +332,6 @@ class ValidatedRadioGroup(ttk.Frame):
         if not self.variable.get():
             self.error.set('A value is required')
 
-
 class BoundText(tk.Text):
     """A Text widget with a bound variable."""
 
@@ -458,7 +456,6 @@ class LabelInput(ttk.Frame):
     def grid(self, sticky=(tk.E + tk.W), **kwargs):
         """Override grid to add default sticky values"""
         super().grid(sticky=sticky, **kwargs)
-
 
 # MAIN LOOP ----------------------------------------------
 
