@@ -35,10 +35,6 @@ class Application(tk.Tk):
 
         self.settings_model = m.SettingsModel()
         self._load_settings()
-        # self.settings = {
-        #     'autofill date': tk.BooleanVar(),
-        #     'autofill sheet data': tk.BooleanVar()
-        # }
 
         menu = MainMenu(self, self.settings)
         self.config(menu=menu)
@@ -206,9 +202,7 @@ class Application(tk.Tk):
 # MAIN LOOP ----------------------------------------------
 
 def main():
-
     pass
-
     return
 
 if __name__ == '__main__':

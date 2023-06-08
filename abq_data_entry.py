@@ -10,10 +10,8 @@ from abq_data_entry.application import Application
 # MAIN LOOP ----------------------------------------------
 
 def main():
-
     app = Application()
     app.mainloop()
-
     return
 
 if __name__ == '__main__':

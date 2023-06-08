@@ -238,9 +238,7 @@ class SettingsModel:
 # MAIN LOOP ----------------------------------------------
 
 def main():
-
     pass
-
     return
 
 if __name__ == '__main__':
